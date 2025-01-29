@@ -25,9 +25,9 @@ export default function Home() {
       cta: 'Get Started',
     },
     {
-      name: 'Smart AI Plan',
+      name: 'Trizzy AI Plan',
       description: 'Advanced features for power users',
-      price: '$99',
+      price: '$10',
       features: [
         'All features from Free Plan',
         'AI-powered response generation',
