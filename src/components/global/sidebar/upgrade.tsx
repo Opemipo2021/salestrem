@@ -16,7 +16,7 @@ const UpgradeCard = (props: Props) => {
         bg-clip-text 
         text-transparent"
         >
-          Trizzy AI
+          MachiKo AI
         </span>
       </span>
       <p className="text-[#9B9CA0] font-light text-sm">

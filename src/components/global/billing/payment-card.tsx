@@ -38,7 +38,7 @@ const PaymentCard = ({label, current, landing}: Props) => {
             </p>
             {label === 'PRO' ? (
                  <span className="bg-gradient-to-r text-3xl from-indigo-500 via-purple-500 font-bold to-pink-500 bg-clip-text text-transparent">
-                    Trizzy AI
+                    MachiKo AI
                </span>
             ) : (
                 <p className='font-bold text-3xl text-text-secondary'>

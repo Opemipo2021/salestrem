@@ -25,7 +25,7 @@ export default function Home() {
       cta: 'Get Started',
     },
     {
-      name: 'Trizzy AI Plan',
+      name: 'MachiKo AI Plan',
       description: 'Advanced features for power users',
       price: '$10',
       features: [
