@@ -34,7 +34,11 @@ export const createUser = async (
       lastname,
       email,
       subscription: {
-        create: {},
+        create: {
+          plan: 'FREE',    // Set default plan
+          status: 'ACTIVE',
+          reference: `free_${clerkId}`
+        },
       },
     },
     select: {

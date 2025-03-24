@@ -14,7 +14,7 @@ import UpgradeCard from '../sidebar/upgrade'
 import CreateAutomation from '../create-automation'
 import Search from '../search'
 import Notifications from '../search/notifications'
-import MainBreadCrumb from '../main-bread-crumb'
+import MainBreadCrumb from '../bread-crumbs/main-bread-crumb'
 
 type Props = {
     slug: string
@@ -65,7 +65,7 @@ const Navbar = ({slug} : Props) => {
             <p className="text-[#9B9CA0]">Help</p>
           </div>
         </div>
-        <SubscriptionPlan>
+        <SubscriptionPlan type='FREE'>
           <div className="flex-1 flex flex-col justify-end">
             <UpgradeCard />
           </div>

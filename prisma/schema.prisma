@@ -26,13 +26,17 @@ model User {
 }
 
 model Subscription {
-  id         String            @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  id         String            @id @default(cuid())
   User       User?             @relation(fields: [userId], references: [id], onDelete: Cascade)
   userId     String?           @unique @db.Uuid
+  reference  String            @unique
   createdAt  DateTime          @default(now())
   plan       SUBSCRIPTION_PLAN @default(FREE)
+  status     String
   updatedAt  DateTime          @default(now())
   customerId String?           @unique
+
+  @@index([userId])
 }
 
 model Integrations {
